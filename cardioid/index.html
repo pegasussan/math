@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Cardioid</title>
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="colorpicker/css/colorpicker.css" type="text/css" />
+		<link href="../styles.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 text-center mt20 mb20">
+						<label>Circulos:</label><input type="number" id="nNumeros">
+						<label>Circulo Base</label><input type="checkbox" id="base_path">
+						<button id="slow_motion">Slow Motion</button>
+						<span id="cpick">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<canvas width="800" height="600" id="blackboard">Your browser does not support the HTML5 canvas tag.</canvas>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<div class="foot">
+				<div class="container">
+					<p>All rights reserved <a href="http://exist3d.com" target="_blank">eXist3D</a></p>
+				</div>
+			</div>
+		</footer>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script type="text/javascript" src="colorpicker/js/colorpicker.js"></script>
+		<script type="text/javascript" src="behav.js"></script>
+	</body>
+</html>

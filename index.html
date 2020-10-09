@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Math</title>
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+		<link href="styles.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 text-center mt20 mb20">
+						<label>Choose:</label>
+						<select id="destino">
+							<option value="0" disabled selected>Choose</option>
+							<option value="cardioid">Cardioid</option>
+							<option value="circles">Circles</option>
+							<option value="spiral">Spiral</option>
+							<option value="step-pattern">Step Patterns</option>
+							<option value="times-tables">Times Tables</option>
+						</select>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					&nbsp;
+				</div>
+			</div>
+		</div>
+		<footer>
+			<div class="foot">
+				<div class="container">
+					<p>All rights reserved <a href="http://exist3d.com" target="_blank">eXist3D</a></p>
+				</div>
+			</div>
+		</footer>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script>
+			$(function() {
+				$('#destino').on('change',function() {
+					window.location.href=$(this).val();
+				});
+				$('#destino').val(0);
+			});
+		</script>
+	</body>
+</html>
